@@ -1,16 +1,23 @@
+/**I'm importing a font URL so the font is better than the Times New Roman (which looks really bad) 😉**/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+/**The * {} portion is the styling applied to every element.**/
 * {
   background-color: #2B192F;
   color: white;
   font-family: 'Montserrat';
 }
+/**Notice how I use "." in some places and "#" in some places to link a container. You use "." when you define it as a class and "#" when you define it as an id."**/
 #mynav {
+  /**Text decoration means the ugly line on the hyperlink will go away...**/
   text-decoration: none;
+  /**List style means the bullet points will go**/
   list-style: none;
 }
+/**Notice how I said we'll add a border? It is being added here! Just copy and past the below element.**/
 table, th, tr {
   border: 1px dotted white;
 }
+/**This allows for a smooth slide in transition, try to reload the demo page and see the transition**/
 @keyframes transitionIn {
   from {
     opacity: 0;
@@ -24,12 +31,4 @@ table, th, tr {
 body {
   animation: transitionIn 0.75s;
 }
-.mynav {
- list-style:none;
-padding: 0;
-  margin: 0;
-  background-color: blue;
-}
-blockquote {
-  color: white;
-}
+/**That's it for now! We can start editing other elements too... Just use ".element-name {}" or "#element-name {}" (check line 9) and add some cool styling... Check out w3schools for styling info :)**/
